@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+
+<!-- //what's the meaning of external
+     //based on my experiement,  i guess:
+	so if we don't define a cache for a specific entity, it will use the default one??
+	if the external sets to true, it will overide the titmetolive as infinity??
+	if we don't define a cache for an entity, and set the external as false, it will use the timetolive we define??
+ -->
+
+<defaultCache 
+eternal="true"    
+maxElementsInMemory="100" 
+timeToLiveSeconds="8000"
+overflowToDisk="false" 
+/>  
+
+
+ <cache name="allCapabilities" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" /> 
+ <cache name="singleCapability" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" />
+ 
+ 
+ <cache name="allAdmins" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" /> 
+ <cache name="singleAdmin" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" />
+ 
+ 
+ <cache name="allCourts" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" /> 
+ <cache name="singleCourt" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" />
+ 
+ 
+ 
+ <cache name="allHalls" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" /> 
+ <cache name="singleHall" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" />
+ 
+ 
+ 
+ <cache name="allReservations" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" /> 
+ <cache name="singleReservation" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" />
+ 
+ 
+ <cache name="allSubscribers" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" /> 
+ <cache name="singleSubscriber" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" />
+ 
+ 
+ <cache name="allTimeInteravls" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" /> 
+ <cache name="singleTimeInterval" maxElementsInMemory="10000" eternal="true"  overflowToDisk="false" />
+ 
+
+ 
+</ehcache>
